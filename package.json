@@ -1,0 +1,29 @@
+{
+  "name": "patternpack-site",
+  "version": "0.0.1",
+  "description": "Public site for PatternPack",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/patternpack/patternpack.github.io.git"
+  },
+  "author": "Marcelo Somers, John Gully",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/patternpack/patternpack.github.io/issues"
+  },
+  "homepage": "https://github.com/patternpack/patternpack.github.io#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-svgmin": "^1.2.0",
+    "gulp-svgstore": "^5.0.4"
+  },
+  "dependencies": {
+    "susy": "^2.2.5"
+  }
+}

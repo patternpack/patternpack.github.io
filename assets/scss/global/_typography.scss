@@ -1,0 +1,28 @@
+a {
+  text-decoration: none;
+  color: $dark-blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  letter-spacing: -4px;
+}

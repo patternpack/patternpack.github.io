@@ -1,0 +1,21 @@
+// Global Scaffolding
+//
+// Set up base styles for the site to use
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background: $white;
+  padding: 0;
+  color: $dark-blue;
+  font-family: $font-opensans;
+}
