@@ -2,6 +2,9 @@
 
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var postcss = require('gulp-postcss');
+var autoprefixer = require('autoprefixer-core');
+var sourcemaps = require('gulp-sourcemaps');
 var connect =  require('gulp-connect');
 var svgmin = require('gulp-svgmin');
 var svgstore = require('gulp-svgstore');
@@ -27,6 +30,9 @@ gulp.task('svg', function() {
 gulp.task('sass', function() {
   gulp.src('./assets/scss/**/*.scss')
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(postcss([
+      autoprefixer({ browsers: ['last 2 versions']})
+    ]))
     .pipe(gulp.dest('./assets/css'))
     .pipe(connect.reload());
 });
