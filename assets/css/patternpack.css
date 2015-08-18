@@ -32,23 +32,31 @@ h6 {
   margin: 0; }
 
 h1 {
+  letter-spacing: -4px;
   font-size: 48px;
+  font-weight: 400; }
+
+h2 {
+  font-size: 22px;
   font-weight: 400;
-  letter-spacing: -4px; }
+  font-family: "Quicksand", Helvetica, Arial, sans-serif; }
+
+code {
+  font-family: 'Inconsolata', monospace; }
 
 .btn--light-blue {
   display: inline-block;
   border-radius: 20px;
   padding: 10px 20px;
+  letter-spacing: -1px;
   font-size: 18px;
-  font-weight: 700;
-  letter-spacing: -1px; }
+  font-weight: 700; }
   .btn--light-blue:hover {
     text-decoration: none; }
 
 .btn--light-blue {
-  background-color: #005ebc;
-  transition: background-color 100ms ease-in-out; }
+  transition: background-color 100ms ease-in-out;
+  background-color: #005ebc; }
   .btn--light-blue:hover {
     background-color: #0051a3; }
 
@@ -81,7 +89,7 @@ h1 {
 
 .hero__nav {
   float: right;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   list-style: none;
   font-size: 14px; }
   .hero__nav li {
@@ -99,6 +107,10 @@ h1 {
   position: absolute;
   bottom: 0;
   width: 100%; }
+  .hero__illustrations:after {
+    display: table;
+    clear: both;
+    content: ""; }
 
 .coffee,
 .glasses,
@@ -171,3 +183,76 @@ h1 {
   left: 775px;
   z-index: 100;
   width: 120px; }
+
+.features {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 45px 0; }
+  .features:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+.features__box {
+  padding: 0 15px;
+  width: 33%;
+  text-align: center; }
+  .features__box img {
+    margin-bottom: 15px;
+    height: 100px; }
+  .features__box h2 {
+    color: #27adc5; }
+
+.footer {
+  background-color: #005ebc;
+  padding: 15px 0;
+  color: #fff; }
+
+.footer__content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../images/pp-logomark.svg");
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-align: right; }
+  .footer__content:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .footer__content img {
+    height: 20px; }
+
+.heart {
+  color: tomato; }
+
+.get-started {
+  background-color: #6acc9b;
+  padding: 60px 0;
+  text-align: center;
+  color: #282c61; }
+  .get-started h2 {
+    color: #282c61;
+    font-size: 48px; }
+  .get-started pre {
+    margin: 15px auto;
+    background-color: #359b68;
+    padding: 15px;
+    width: 85%;
+    color: #fff;
+    font-size: 18px; }
+  .get-started .btn--outline {
+    background-color: #fff; }
+
+.get-started__content {
+  max-width: 1170px;
+  margin-left: auto;
+  margin-right: auto; }
+  .get-started__content:after {
+    content: " ";
+    display: block;
+    clear: both; }

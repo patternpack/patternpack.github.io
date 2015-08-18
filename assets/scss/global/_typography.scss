@@ -22,7 +22,17 @@ h6 {
 }
 
 h1 {
+  letter-spacing: -4px;
   font-size: 48px;
   font-weight: 400;
-  letter-spacing: -4px;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  font-family: $font-quicksand;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
 }

@@ -1,0 +1,28 @@
+.get-started {
+  background-color: $foam;
+  padding: 60px 0;
+  text-align: center;
+  color: $dark-blue;
+
+  h2 {
+    color: $dark-blue;
+    font-size: 48px;
+  }
+
+  pre {
+    margin: 15px auto;
+    background-color: darken($foam, 20%);
+    padding: 15px;
+    width: 85%;
+    color: $white;
+    font-size: 18px;
+  }
+
+  .btn--outline {
+    background-color: $white;
+  }
+}
+
+.get-started__content {
+  @include container;
+}

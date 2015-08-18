@@ -1,0 +1,21 @@
+.features {
+  @include container;
+
+  display: flex;
+  padding: 45px 0;
+}
+
+.features__box {
+  padding: 0 15px;
+  width: 33%;
+  text-align: center;
+
+  img {
+    margin-bottom: 15px;
+    height: 100px;
+  }
+
+  h2 {
+    color: $teal;
+  }
+}

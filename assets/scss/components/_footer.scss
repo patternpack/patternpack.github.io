@@ -1,0 +1,22 @@
+.footer {
+  background-color: $light-blue;
+  padding: 15px 0;
+  color: $white;
+}
+
+.footer__content {
+  @include container;
+
+  background-image: url('../images/pp-logomark.svg');
+  background-repeat: no-repeat;;
+  background-position: center left;
+  text-align: right;
+
+  img {
+    height: 20px;
+  }
+}
+
+.heart {
+  color: tomato;
+}

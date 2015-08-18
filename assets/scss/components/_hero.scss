@@ -33,7 +33,7 @@
 
 .hero__nav {
   float: right;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   list-style: none;
   font-size: 14px;
 
@@ -57,6 +57,12 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  &:after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 }
 
 .coffee,
