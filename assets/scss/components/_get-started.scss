@@ -1,5 +1,5 @@
 .get-started {
-  background-color: $foam;
+  background-color: $gray;
   padding: 60px 0;
   text-align: center;
   color: $dark-blue;
@@ -10,12 +10,18 @@
   }
 
   pre {
+    display: inline-block;
     margin: 15px auto;
-    background-color: darken($foam, 20%);
-    padding: 15px;
-    width: 85%;
-    color: $white;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 15px 25px;
+    width: 360px;
+    text-align: left;
+    color: $black;
     font-size: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   .btn--outline {

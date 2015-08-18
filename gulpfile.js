@@ -11,7 +11,7 @@ var svgstore = require('gulp-svgstore');
 var path = require('path');
 
 gulp.task('svg', function() {
-  gulp.src('assets/images/logo.svg')
+  gulp.src(['assets/images/logo.svg', 'assets/images/pp-logomark.svg', 'assets/images/slalom-logo.svg'])
   .pipe(svgmin(function(file) {
     var prefix = path.basename(file.relative, path.extname(file.relative));
     return {

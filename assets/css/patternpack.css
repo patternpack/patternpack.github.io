@@ -89,7 +89,7 @@ code {
 
 .hero__nav {
   float: right;
-  margin-bottom: 80px;
+  margin-bottom: 70px;
   list-style: none;
   font-size: 14px; }
   .hero__nav li {
@@ -224,14 +224,15 @@ code {
     content: " ";
     display: block;
     clear: both; }
-  .footer__content img {
-    height: 20px; }
+  .footer__content .slalom-logo {
+    height: 15px;
+    fill: #fff; }
 
 .heart {
-  color: tomato; }
+  color: #c5f275; }
 
 .get-started {
-  background-color: #6acc9b;
+  background-color: #e6e5e5;
   padding: 60px 0;
   text-align: center;
   color: #282c61; }
@@ -239,12 +240,16 @@ code {
     color: #282c61;
     font-size: 48px; }
   .get-started pre {
+    display: inline-block;
     margin: 15px auto;
-    background-color: #359b68;
-    padding: 15px;
-    width: 85%;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 15px 25px;
+    width: 360px;
+    text-align: left;
+    color: #2a2a2a;
     font-size: 18px; }
+    .get-started pre:last-child {
+      margin-bottom: 0; }
   .get-started .btn--outline {
     background-color: #fff; }
 

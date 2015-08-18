@@ -20,7 +20,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Quick Start</a></li>
           <li><a href="#">Documentation</a></li>
-          <li><a href="#">GitHub</a></li>
+          <li><a href="http://github.com/patternpack/patternpack">GitHub</a></li>
         </ul>
 
         <div class="hero__headline">
@@ -68,11 +68,27 @@
         <h2>Get Started</h2>
 
 <pre><code>npm install patternpack --save-dev</code></pre>
+
+        <p>Set up your task in your <code>gruntfile.js</code>:</p>
+
+<pre><code>patternpack: {
+  options: {
+    assets: './src/assets',
+    components: './src/components'
+  },
+  run: {},
+  build: {},
+  release: {}
+}</code></pre>
+
+        <p>Start up your pattern library.</p>
+
+<pre><code>$ grunt patternpack:run</code></pre>
       </div>
     </div>
     <footer class="footer">
       <div class="footer__content">
-        Made with <span class="heart">&#10084;</span> at <a href="http://slalom.com/"><img src="assets/images/slalom-logo.svg" alt="Slalom Dallas" /></a>
+        Made with <span class="heart">&#10084;</span> at <a href="http://slalom.com/"><svg viewBox="0 0 77 20" class="slalom-logo"><use xlink:href="assets/images/images.svg#slalom-logo"></use></svg></a>
       </div>
     </footer>
   </body>

@@ -8,15 +8,16 @@
   @include container;
 
   background-image: url('../images/pp-logomark.svg');
-  background-repeat: no-repeat;;
+  background-repeat: no-repeat;
   background-position: center left;
   text-align: right;
 
-  img {
-    height: 20px;
+  .slalom-logo {
+    height: 15px;
+    fill: $white;
   }
 }
 
 .heart {
-  color: tomato;
+  color: $green;
 }
