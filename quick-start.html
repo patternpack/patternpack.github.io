@@ -5,7 +5,8 @@
     <title>PatternPack</title>
 
     <link href="assets/css/patternpack.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans:400italic,400|Inconsolata' rel='stylesheet' type='text/css'>
+    <link href="assets/libraries/highlight/highlight-github.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans:400italic,400|Inconsolata" rel="stylesheet" type="text/css">
   </head>
   <body>
     <div class="hero">
@@ -43,53 +44,28 @@
         </div>
       </div>
     </div>
-    <div class="features">
-      <div class="features__box">
-        <img src="assets/images/develop.svg" alt="Build Your Interface" />
 
-        <h2>Design &amp; Build Your Interface</h2>
-        <p>PatternPack makes it easy to build a living design system. It is not a replacement for Bootstrap - it’s a set of tools for you to "build your own Bootstrap."</p>
-      </div>
-      <div class="features__box">
-        <img src="assets/images/code.svg" alt="Document how to Use It" />
-
-        <h2>Document The Pattern Library</h2>
-        <p>A living design system is a well documented one. PatternPack is a static site generator that lets you document your interface using Markdown and a single grunt task.</p>
-      </div>
-      <div class="features__box">
-        <img src="assets/images/share.svg" alt="Share the Code" />
-
-        <h2>Share The Code</h2>
-        <p>PatternPack keeps your design system alive by staying in sync with your project. Share your code via npm or bower and easily version with semantic versioning.</p>
-      </div>
+    <div class="documentation">
+        <div class="documentation__content"></div>
     </div>
-    <div class="get-started">
-      <div class="get-started__content">
-        <h2>Get Started</h2>
 
-<pre><code>npm install patternpack --save-dev</code></pre>
-
-        <p>Set up your task in your <code>gruntfile.js</code>:</p>
-
-<pre><code>patternpack: {
-  options: {
-    assets: './src/assets',
-    components: './src/components'
-  },
-  run: {},
-  build: {},
-  release: {}
-}</code></pre>
-
-        <p>Start up your pattern library.</p>
-
-<pre><code>$ grunt patternpack:run</code></pre>
-      </div>
-    </div>
     <footer class="footer">
       <div class="footer__content">
         Made with <span class="heart">&#10084;</span> at <a href="http://slalom.com/"><svg viewBox="0 0 77 20" class="slalom-logo"><use xlink:href="assets/images/images.svg#slalom-logo"></use></svg></a>
       </div>
     </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.2.3/showdown.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="/assets/libraries/showdown-github/showdown-github.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/patternpack.utils.js"></script>
+    <script type="text/javascript">
+    var url = "https://raw.githubusercontent.com/patternpack/patternpack/master/readme.md";
+    patternpack.utils.getMarkdownAsHtml(url, function(html) {
+      var element = document.getElementsByClassName("documentation__content");
+      element[0].innerHTML = html;
+      hljs.initHighlightingOnLoad();
+    });
+    </script>
   </body>
 </html>
