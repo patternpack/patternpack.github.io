@@ -1,11 +1,1 @@
-node_modules/.bin
-node_modules/autoprefixer-core
-node_modules/gulp
-node_modules/gulp-svgstore
-node_modules/gulp-svgmin
-node_modules/gulp-sass
-node_modules/gulp-postcss
-node_modules/gulp-sourcemaps
-node_modules/gulp-connect
-node_modules/susy/lib
-node_modules/susy/templates
+node_modules/
