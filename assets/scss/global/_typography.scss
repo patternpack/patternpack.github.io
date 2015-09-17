@@ -1,15 +1,10 @@
 a {
-  text-decoration: none;
   color: $dark-blue;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  padding-left: 1em;
 }
 
 h1,
@@ -28,11 +23,20 @@ h1 {
 }
 
 h2 {
+  margin-top: 1.5em;
+  color: $light-blue;
+  font-family: $font-quicksand;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: $font-quicksand;
   font-size: 22px;
   font-weight: 400;
-  font-family: $font-quicksand;
 }
 
 code {
   font-family: 'Inconsolata', monospace;
+  line-height: 1.5em;
 }

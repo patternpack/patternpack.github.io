@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PatternPack</title>
+
+    <link href="assets/css/patternpack.css" rel="stylesheet">
+    <link href="assets/libraries/highlight/highlight-github.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Quicksand:400,700|Open+Sans:400italic,400|Inconsolata" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="hero hero--short">
+      <div class="hero__container">
+        <a href="/index.html" class="hero__logo">
+          <svg viewBox="0 0 170 40">
+            <use xlink:href="assets/images/images.svg#logo"></use>
+          </svg>
+        </a>
+
+        <ul class="hero__nav">
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/quick-start.html" class="active">Quick Start</a></li>
+          <li><a href="https://github.com/patternpack/patternpack/blob/master/docs/docs.md">Documentation</a></li>
+          <li><a href="http://github.com/patternpack/patternpack">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="documentation">
+        <div class="documentation__content"></div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__content">
+        Made with <span class="heart">&#10084;</span> at <a href="http://slalom.com/"><svg viewBox="0 0 77 20" class="slalom-logo"><use xlink:href="assets/images/images.svg#slalom-logo"></use></svg></a>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.2.3/showdown.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="/assets/libraries/showdown-github/showdown-github.min.js"></script>
+    <script type="text/javascript" src="/assets/scripts/patternpack.utils.js"></script>
+    <script type="text/javascript">
+    var url = "https://raw.githubusercontent.com/patternpack/patternpack/master/docs/docs.md";
+    patternpack.utils.getMarkdownAsHtml(url, function(html) {
+      var element = document.getElementsByClassName("documentation__content");
+      element[0].innerHTML = html;
+      hljs.initHighlightingOnLoad();
+    });
+    </script>
+  </body>
+</html>

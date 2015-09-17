@@ -15,6 +15,17 @@
   }
 }
 
+.hero--short {
+  background-color: $light-blue;
+  background-image: none;
+  padding-bottom: 20px;
+  height: auto;
+
+  .hero__nav {
+    margin-bottom: 0;
+  }
+}
+
 .hero__container {
   @include container;
 
@@ -23,6 +34,7 @@
 
 .hero__logo {
   float: left;
+  line-height: 0;
 
   svg {
     width: 170px;
@@ -41,6 +53,24 @@
     float: left;
     margin-left: 30px;
     line-height: 40px;
+
+    a {
+      padding: 5px 10px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &.active {
+        border-radius: 20px;
+        background-color: rgba($dark-blue, .5);
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
   }
 }
 
