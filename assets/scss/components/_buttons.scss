@@ -17,6 +17,7 @@
 
   transition: background-color 100ms ease-in-out;
   background-color: $light-blue;
+  color: $white;
 
   &:hover {
     background-color: darken($light-blue, 5%);

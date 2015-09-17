@@ -62,7 +62,8 @@ code {
 
 .btn--light-blue {
   transition: background-color 100ms ease-in-out;
-  background-color: #005ebc; }
+  background-color: #005ebc;
+  color: #fff; }
   .btn--light-blue:hover {
     background-color: #0051a3; }
 
