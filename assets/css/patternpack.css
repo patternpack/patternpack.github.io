@@ -276,6 +276,7 @@ code {
   text-align: center;
   color: #282c61; }
   .get-started h2 {
+    margin-top: 0;
     color: #282c61;
     font-size: 48px; }
   .get-started pre {
